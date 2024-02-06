@@ -1,3 +1,5 @@
+import Feed from "@/components/Feed";
+
 const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
@@ -8,7 +10,7 @@ const Home = () => {
       </h1>
       <p className="desc text-center"> Prompt Wallet is an open-source AI prompt saving tool for anyone to save and share the best prompts</p>
 
-      {/* <Feed /> */}
+      <Feed />
     </section>
   );
 };
