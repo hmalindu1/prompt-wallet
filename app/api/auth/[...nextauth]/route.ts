@@ -1,3 +1,4 @@
+import { connectToDB } from "@/utils/db";
 import nextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 
@@ -14,6 +15,8 @@ const handler = nextAuth({
 
   async signIn({ profile }) {
       try {
+        await connectToDB();
+
         
       } catch (error) {
         
